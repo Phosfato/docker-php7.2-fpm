@@ -27,4 +27,4 @@ STOPSIGNAL SIGQUIT
 
 EXPOSE 9000
 
-CMD ["/usr/sbin/php-fpm7.2"]
+CMD ["/usr/sbin/php-fpm7.2", "--allow-to-run-as-root"]
