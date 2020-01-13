@@ -15,7 +15,7 @@ RUN apt-get update -yq && \
         php7.2-soap \
         php7.2-xml \
         php7.2-curl \
-        composer \
+        php-imagick \
         php-memcached \
         php7.2-zip && \
     ln -sf /dev/stdout /var/log/php7.2-fpm.log && \
