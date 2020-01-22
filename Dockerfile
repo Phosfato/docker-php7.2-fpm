@@ -15,10 +15,15 @@ RUN apt-get update -yq && \
         php7.2-soap \
         php7.2-xml \
         php7.2-curl \
+        php7.2-xdebug \
+        php-imagick \
+        php-memcached \
         php7.2-zip && \
     ln -sf /dev/stdout /var/log/php7.2-fpm.log && \
     # remove files left by `apt-get update`
     rm -rf /var/lib/apt/lists/*
+
+COPY xdebug.ini /etc/php/7.2/mods-available/xdebug.ini
 
 COPY php-fpm.conf /etc/php/7.2/fpm/
 COPY www.conf /etc/php/7.2/fpm/pool.d/
