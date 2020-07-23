@@ -22,8 +22,6 @@ RUN apt-get update -yq && \
     # remove files left by `apt-get update`
     rm -rf /var/lib/apt/lists/*
 
-COPY xdebug.ini /etc/php/7.2/mods-available/xdebug.ini
-
 COPY php-fpm.conf /etc/php/7.2/fpm/
 COPY www.conf /etc/php/7.2/fpm/pool.d/
 
