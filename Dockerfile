@@ -6,8 +6,6 @@ RUN apt-get update -yq && \
     apt-get install -yq \
         php7.2-bcmath \
         php7.2-curl \
-        # falta o devel será que precisa? depois de instalar o php-dev ele ainda não lista devel
-        # RUN apt-get install -qy php-dev
         php7.2-fpm \
         php7.2-gd \
         php7.2-intl \
