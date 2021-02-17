@@ -25,6 +25,7 @@ RUN apt-get update -yq && \
         php-memcached \
         php-msgpack \
         php-xdebug \
+        php-imagick \
         && \
     ln -sf /dev/stdout /var/log/php7.2-fpm.log && \
     # remove files left by `apt-get update`
